@@ -5,7 +5,7 @@ import ApplySection from "@/components/ApplySection";
 
 export default function Index() {
   return (
-    <div className="min-h-screen bg-[#060c1a] font-ibm text-white">
+    <div className="min-h-screen bg-slate-50 font-ibm text-slate-900">
       <NavBar />
       <HeroSection />
       <ContentSections />

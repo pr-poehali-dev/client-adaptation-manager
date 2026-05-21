@@ -1,15 +1,19 @@
+export const TG_LINK = "https://t.me/YOUR_USERNAME";
+
 export default function NavBar() {
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#060c1a]/90 backdrop-blur-md border-b border-white/10">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <div className="font-cormorant text-2xl font-semibold tracking-widest text-white uppercase">
+        <div className="font-cormorant text-2xl font-bold text-slate-900 tracking-wide">
           Advoprom
         </div>
         <a
-          href="#apply"
-          className="hidden md:block px-6 py-2 border border-[#c9a84c] text-[#c9a84c] font-ibm text-sm tracking-widest uppercase hover:bg-[#c9a84c] hover:text-[#060c1a] transition-all duration-300"
+          href={TG_LINK}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hidden md:block px-6 py-2.5 bg-slate-900 text-white font-ibm text-sm tracking-wider hover:bg-slate-700 transition-colors duration-200"
         >
-          Откликнуться
+          Написать в Telegram
         </a>
       </div>
     </nav>
